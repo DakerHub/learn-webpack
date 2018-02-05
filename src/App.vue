@@ -1,5 +1,9 @@
 <template>
-  <h1>HELLO,PADAKER2</h1>
+  <div>
+    <span class="inline">1</span>
+    <span class="inline">2</span>
+    <span class="inline">3</span>
+  </div>
 </template>
 
 <script>
@@ -9,5 +13,7 @@ export default {
 </script>
 
 <style>
-
+.inline{
+  background-color: #ccc;
+}
 </style>
