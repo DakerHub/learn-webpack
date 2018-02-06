@@ -295,7 +295,11 @@ process.umask = function() { return 0; };
 //
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  name: 'App'
+  name: 'App',
+  methods: {
+    s () {
+    }
+  }
 });
 
 
@@ -310,28 +314,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.devtools = true;
-__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.performance = true;
-__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.productionTip = false;
+__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.devtools = true
+__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.performance = true
+__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.productionTip = false
 
 // const app = {
-  // template: '<h1>HELLO,PADAKER</h1>'
+// template: '<h1>HELLO,PADAKER</h1>'
 //   render(h) {
 //     return h('h1', 'HELLO,PADAKER');
 //   }
 // }
 
+/* eslint-disable no-new */
 new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
   el: '#app',
-  render(h) {
-    return h('app');
+  render (h) {
+    return h('app')
   },
   // template: '<app />',
   components: {
     // app
     App: __WEBPACK_IMPORTED_MODULE_1__App_vue__["a" /* default */]
   }
-});
+})
+
 
 /***/ }),
 /* 4 */

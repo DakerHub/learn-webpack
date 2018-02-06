@@ -1,5 +1,5 @@
-const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: './src/app.js',
@@ -17,6 +17,17 @@ module.exports = {
         ]
       },
       {
+        enforce: 'pre',
+        test: /\.(vue|js)$/,
+        loader: 'eslint-loader',
+        include: [
+          path.join(__dirname, 'src')
+        ],
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -25,7 +36,7 @@ module.exports = {
               use: [{
                 loader: 'css-loader',
                 options: {
-                  minimize: true
+                  // minimize: true
                 }
               }],
               fallback: 'vue-style-loader'
@@ -42,4 +53,4 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('style.css')
   ]
-};
+}
