@@ -1,11 +1,13 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/app.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '')
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -49,8 +51,12 @@ module.exports = {
       }
     ]
   },
-  devtool: '#source-map',
+  // devtool: '#source-map',
   plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'index.html')
+    }),
     new ExtractTextPlugin('style.css')
   ]
 }
