@@ -2,7 +2,8 @@
   <div>
     <span class="inline">1</span>
     <span class="inline">2</span>
-    <span class="inline">3</span>
+    <span class="inline">2</span>
+    <span class="inline">34</span>
   </div>
 </template>
 
@@ -12,6 +13,9 @@ export default {
   methods: {
     s () {
     }
+  },
+  mounted () {
+    console.log('mounted!')
   }
 }
 </script>

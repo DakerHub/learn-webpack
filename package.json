@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config ./build/webpack.prod.js",
+    "dev": "webpack-dev-server --open --config ./build/webpack.dev.js"
   },
   "author": "fengcc",
   "license": "ISC",
@@ -29,9 +30,12 @@
     "pug": "^2.0.0-rc.4",
     "standard": "^10.0.3",
     "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.2.2",
     "vue-loader": "^14.1.1",
     "vue-template-compiler": "^2.5.13",
-    "webpack": "^3.10.0"
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2",
+    "webpack-merge": "^4.1.2"
   },
   "dependencies": {
     "vue": "^2.5.13"
