@@ -18,6 +18,7 @@ export default {
     console.log('mounted!')
   }
 }
+// this is a conflict commit !
 </script>
 
 <style>
