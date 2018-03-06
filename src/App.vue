@@ -18,7 +18,11 @@ export default {
     console.log('mounted!')
   }
 }
+<<<<<<< HEAD
 // this is a conflict commit !
+=======
+// this is a first commit !
+>>>>>>> a93b57963d0110ee9859d1d1bde9e2152dc8ff1e
 </script>
 
 <style>
