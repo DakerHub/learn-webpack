@@ -19,6 +19,7 @@ export default {
   }
 }
 // this is a conflict commit !
+// this is verson 1.0 plu
 </script>
 
 <style>
